@@ -1,10 +1,15 @@
 #include "sort.h"
 
+/**
+ * shell_sort - sorts an array using the shell sort algorithm
+ * @array: the array to be sorted
+ * @size : the size of the array
+ */
 void shell_sort(int *array, size_t size)
 {
 	int i, j, temp, gap = 1;
 
-	if (array && size)
+	if (array && size > 1)
 	{
 		/* Calculate the starting gap (using Knuth's Sequence) */
 		while (gap < (int)size)
@@ -17,7 +22,7 @@ void shell_sort(int *array, size_t size)
 		/* Initiate gap interval (using Knuth's Sequence) */
 		for (; gap >= 1; gap = (gap - 1) / 3)
 		{
-			for (j = gap; j < (int)size ;j++)
+			for (j = gap; j < (int)size; j++)
 			{
 				for (i = j - gap; i >= 0; i -= gap)
 				{

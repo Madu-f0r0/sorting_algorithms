@@ -9,7 +9,7 @@ void counting_sort(int *array, size_t size)
 {
 	int i, k = 0, *count_arr, *dup_array;
 
-	if (array && size)
+	if (array && size > 1)
 	{
 		/* Find the largest number in the array and assign it to k */
 		for (i = 0; i < (int)size; i++)
