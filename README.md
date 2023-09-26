@@ -16,5 +16,8 @@ Tasks
 [3. Quick sort](3-quick_sort.c) -  function that sorts an array of integers in ascending order using the Quick sort algorithm.
 
 
+[7. Merge sort](103-merge_sort.c) -  function that sorts an array of integers in ascending order using the Merge sort algorithm.
+
+
 
 [AUTHORS] Jukunye Shira & Daniel Herbert
